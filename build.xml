@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<project name="Servlet" basedir="." default="build">
+   <property name="src.dir" value="src"/>
+   <property name="web.dir" value="res"/>
+   <property name="build.dir" value="build"/>
+   <property name="name" value="fax"/>
+
+   <path id="master-classpath">
+      <fileset dir="F:\DevOps\FirstServlet\FirstServlet">
+         <include name="*.jar"/>
+      </fileset>
+      <pathelement path="${build.dir}"/>
+   </path>
+
+ <target name="build" description="compile source tree java files">
+      <mkdir dir="${build.dir}"/>
+      <javac destdir="${build.dir}" source="1.6" target="1.6">
+         <src path="${src.dir}"/>
+         <classpath refid="master-classpath"/>
+      </javac>
+   </target>
+ 
+   <target name="clean" description="Clean output directories">
+      <delete>
+         <fileset dir="${build.dir}">
+            <include name="**/*.class"/>
+         </fileset>
+      </delete>
+   </target>
+</project>
