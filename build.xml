@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0"?>
-<project name="FirstServlet" basedir="." default="usage">
+<project name="FirstServlet" basedir="." default="sample">
    <property file="build.properties"/>
    <property name="src.dir" value="src"/>
    <property name="web.dir" value="war"/>

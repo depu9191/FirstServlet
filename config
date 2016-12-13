@@ -1,5 +1,5 @@
 [core]
-	repositoryformatversion = 0
+	repositoryformatversion = 2
 	filemode = false
 	bare = true
 	symlinks = false
